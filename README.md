@@ -18,3 +18,17 @@ Contents
 * Day 3 (pp. 55-56)
   * 01_csv.rb (must be run from the ruby/day-3 directory)
 
+### Io
+
+* Day 1 (p. 74)
+  * 01_ones.io
+  * 02_truthiness.io
+  * 03_method.io
+* Day 2 (p. 83)
+  * 01_fibonacci.io
+  * 02_divide_by_zero.io
+  * 03_2d_sum.io
+  * 04_myAverage.io
+  * 05_matrix.io (also includes #6 and #7)
+  * 08_random.io
+
