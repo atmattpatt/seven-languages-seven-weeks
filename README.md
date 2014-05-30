@@ -31,4 +31,7 @@ Contents
   * 04_myAverage.io
   * 05_matrix.io (also includes #6 and #7)
   * 08_random.io
+* Day 3 (pp. 91-92)
+  * 01_pretty_xml.io
+  * 02_list_brackets.io
 
