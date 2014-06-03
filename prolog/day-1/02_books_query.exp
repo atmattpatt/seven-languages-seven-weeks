@@ -1,0 +1,35 @@
+#!/usr/bin/env expect
+
+set prompt "| ?- "
+
+spawn "gprolog"
+
+expect $prompt
+send "\['01_books.pl'\].\r"
+expect "yes"
+
+expect $prompt
+send "book(What, verne).\r"
+
+expect "What = "
+send ";\r"
+
+expect "What = "
+
+expect $prompt
+send "book(What, dickens).\r"
+
+expect "What = "
+send ";\r"
+
+expect $prompt
+
+send "book(What, shakespeare).\r"
+
+expect "What = "
+send ";\r"
+
+expect "What = "
+
+expect $prompt
+

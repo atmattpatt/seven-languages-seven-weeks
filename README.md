@@ -35,3 +35,13 @@ Contents
   * 01_pretty_xml.io
   * 02_list_brackets.io
 
+### Prolog
+
+Uses GNU Prolog.  Queries are written in prolog but executed via expect scripts (for a bonus eighth language).
+
+* Day 1 (p. 109)
+  * 01_books.pl
+  * 02_books_query.exp
+  * 03_music.pl
+  * 04_guitar.exp
+

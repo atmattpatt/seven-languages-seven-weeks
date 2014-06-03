@@ -1,0 +1,15 @@
+#!/usr/bin/env expect
+
+set prompt "| ?- "
+
+spawn "gprolog"
+
+expect $prompt
+send "\['03_music.pl'\].\r"
+
+expect $prompt
+
+send "instrument(Who, guitar).\r"
+
+interact
+
