@@ -1,0 +1,23 @@
+#!/usr/bin/env expect
+
+set prompt "| ?- "
+
+spawn "gprolog"
+
+expect $prompt
+send "\['02_list_min.pl'\].\r"
+
+expect $prompt
+send "list_min(\[08,18,30,33,53,65,75,86\], Min).\r"
+
+expect "Min ="
+send "\r"
+
+expect $prompt
+send "list_min(\[66,47,2,15,3,58,21,83\], Min).\r"
+
+expect "Min ="
+send "\r"
+
+expect $prompt
+

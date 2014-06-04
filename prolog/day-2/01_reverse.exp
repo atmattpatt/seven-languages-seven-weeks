@@ -1,7 +1,6 @@
 #!/usr/bin/env expect
 
 set prompt "| ?- "
-set timeout 120
 
 spawn "gprolog"
 

@@ -46,4 +46,5 @@ Uses GNU Prolog.  Queries are written in prolog but executed via expect scripts 
   * 04_guitar.exp
 * Day 2 (p. 120)
   * 01_reverse.pl and 01_reverse.exp
+  * 02_list_min.pl and 02_list_min.exp
 
