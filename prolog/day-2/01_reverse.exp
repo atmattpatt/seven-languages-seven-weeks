@@ -1,0 +1,31 @@
+#!/usr/bin/env expect
+
+set prompt "| ?- "
+set timeout 120
+
+spawn "gprolog"
+
+expect $prompt
+send "\['01_reverse.pl'\].\r"
+
+expect $prompt
+send "flip(\[x\], One).\r"
+
+expect "One ="
+send "\r"
+
+expect $prompt
+send "flip(\[y,z\], Two).\r"
+
+expect "Two ="
+send "\r"
+
+expect $prompt
+send "flip(\[a,b,c,d,e,f,g\], What).\r"
+
+expect "What ="
+
+send "\r"
+
+expect $prompt
+
