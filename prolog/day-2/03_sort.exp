@@ -1,0 +1,19 @@
+#!/usr/bin/env expect
+
+set prompt "| ?- "
+
+spawn "gprolog"
+
+expect $prompt
+send "\['03_sort.pl'\].\r"
+
+expect $prompt
+# This list of 11 numbers takes ~15 seconds to sort
+# q.e.d. this is probably the least-effecient sorting algorithm ever written
+send "my_sort(\[52,89,29,34,77,36,56,33,85,30,96\],Sorted).\r"
+
+expect "Sorted ="
+send "\r"
+
+expect $prompt
+
